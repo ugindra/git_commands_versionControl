@@ -1,0 +1,88 @@
+command : c: .. will change the drive 
+
+to create a text file or doc file 
+command : type nul > file.txt
+
+to edit a text file 
+command : notepad.exe chapter1.txt
+
+command : git init - initializes an empty git repositry in the directory
+- the .git file is the one created will be now respnsible for tracking the chages 
+  commiting the changes and version control 
+- git file will not be seen through dir command
+- now enter dir /A:D 
+
+command : git status
+- shows the untracked files or say not comitted files
+- to add that file into git enter the below command
+
+command : git add filename.txt
+- now check again by git status command we find the file name in green color 
+- this implies that the file is been tracked and committed
+
+command : git commit -m " comitted msg here "
+
+command : git log
+- this command is used to check what commits on what date & time been done
+- the hash uniquely represents the commit thats been done previously
+
+command : git add .
+- this is for if we have numerous files in our directory just by putting dot we can git all the files in the
+  directory all at once
+
+command : git diff file_name
+- this command shows the difference between the content in the previously commited file and the changed 
+  present file
+
+command : git checkout filename.txt
+- this command brings the previous version of the file to the present version of file
+
+command : git remote add origin 
+- this command is used to add our local files to the remote repositry + repositry address
+
+command : git push -u origin master
+- master is the default branch or say main branch of all our commits
+- stores every commit and previous commits
+
+command : git rm --cached -r .
+- used to remove all the files that are sent to staged area that means after adding them staged area using git add .s
+
+
+--------------------------------------------------------------------------------
+
+
+Cloning a remote folder to our local 
+
+
+command : git clone https://github.com/austinzheng/swift-2048.git (repositry path)
+
+--------------------------------------------------------------------------------
+
+Branches and branching :
+
+- parallell branching 
+
+
+we add a new branch other than master branch by using 
+command : git branch branchName
+
+to see all branches 
+command :git branch
+the * symbol shows at which branch you are currently on
+
+
+to switch to other parallel branch 
+command : git checkout branch name
+
+to merge the master and parallel branch 
+command : git merge parallellBranchName
+
+
+*cherry-picking
+*gut rebase
+
+----------------------------------------------------------------------------
+fork : copy a our repository nd  giving it to others for modification
+anglea --->  banglea
+fork option
+
